@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="struts-base" namespace="/" extends="struts-default">
+		<!-- 拦截器 -->
+		<interceptors>
+			<!-- 定义权限拦截器栈 注：该拦截器是全局性的，所有struts配置文件都要配置 -->
+			<interceptor-stack name="authorizeInterceptorStack">
+				<!-- 加入struts2默认的拦截器 -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!-- 定义默认拦截器栈 注：如果Action里没有引入别的拦截器栈，则都会应用自定义默认拦截器栈 -->
+		<default-interceptor-ref name="authorizeInterceptorStack"></default-interceptor-ref>
+
+		<!-- 全局Result -->
+		<global-results>
+			<result name="error">error.jsp</result>
+			<result name="success">success.jsp</result>
+			<result name="login" type="redirectAction">
+				<param name="actionName">preLogin</param>
+				<param name="namespace">/user</param>
+			</result>
+		</global-results>
+		<global-exception-mappings>
+			<!-- 指Action抛出Exception异常时，转入名为exception的结果。 -->
+			<exception-mapping exception="java.lang.Exception"
+				result="exception" />
+		</global-exception-mappings>
+	</package>
+</struts>

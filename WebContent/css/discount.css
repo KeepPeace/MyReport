@@ -1,0 +1,383 @@
+.text-top{
+	vertical-align: top;
+}
+.discount-examine {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+	color: #4e4e4e;
+}
+.bank-title {
+	margin-top: 10px;
+	margin-left: 12px;
+}
+.place-msg {
+	margin-top: 10px;
+}
+.place-name {
+	margin-right: 60px;
+	width: 200px;
+}
+.net-no {
+	margin-right: 80px;
+	width: 200px;
+}
+.place-msg table {
+	float: right;
+	color: #4e4e4e;
+}
+.place-msg table td {
+	height: 32px;
+	line-height: 32px;
+	padding: 5px;
+}
+
+.td-1 {
+	text-align: right;
+	width: 110px;
+}
+.td-2 {
+	text-align: left;
+	width: 100px;
+}
+.td-3 {
+	text-align: right;
+	width: 110px;
+}
+.td-4 {
+	text-align: left;
+	width: 100px;
+}
+.td-5 {
+	text-align: right;
+	width: 100px;
+}
+.td-6 {
+	text-align: left;
+}
+.discount-searchbtn {
+	width: 58px;
+	margin-top: 5px; 
+}
+
+/*浼樻儬娲诲姩璇︽儏*/
+.discount-detail {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+	color: #4e4e4e;
+}
+.discount-title {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.discount-sp{
+	margin-top: 20px;
+	margin-left: 112px;
+}
+.discount-data {
+	margin-top: 20px;
+}
+.discount-list {
+	margin-top: 20px;
+	color: #4e4e4e;
+}
+.discount-list table td {
+	height: 22px;
+	line-height: 22px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: middle;
+}
+.td-name {
+	width: 140px;
+	text-align: right;
+}
+.td-nameL {
+	width: 400px;
+	text-align: right;
+}
+.td-nameT {
+	width: 200px;
+	text-align: right;
+}
+.td-value {
+	width: 130px;
+	text-align: left;
+	padding-left: 5px;
+}
+td textarea {
+	width: 800px;
+	height: 165px;
+}
+.td-valueL {
+	width: 170px;
+	text-align: left;
+	padding-left: 5px;
+}
+.display-preview {
+	margin-left: 130px;
+	margin-top: 10px;
+}
+.discount-operate {
+	margin-bottom:100px;
+	margin-top: 85px;
+	margin-left: 345px;
+}
+.discount-back {
+	margin-left: 160px;
+}
+
+/*鏂板浼樻儬鍒�/
+.discount-add {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+	color: #4e4e4e;
+}
+.td-add {
+	margin-top: 10px;
+}
+.ui-table a{
+	color:#403DF0;
+}
+
+
+/*1-浼樻儬绠＄悊-娣诲姞閫傜敤鍟嗘埛-*/
+.pro-lever{
+	display: none;
+	padding:5px 20px;
+	background:#fff;
+}
+.pro-lever .ui-ipt{
+	margin-top: 20px;
+}
+.pro-lever .fitsogo-search{
+	margin-top: 20px;
+}
+.pro-lever .ui-ipt .i-txt{
+	width:275px;
+}
+.pro-lever .ui-ipt .i-txt-gray{
+	width:275px;
+}
+.afs-center{
+	width:175px;
+	margin-top: 100px;
+	margin-left: 70px;
+}
+.afs-center .afs-add{
+	margin-bottom: 50px;
+}
+.afs-left{
+	width:475px;
+}
+.afs-left .ui-fr{
+	margin-top: 40px;
+}
+.afs-right{
+	margin-top: 34px;
+	width:400px;
+}
+.afs-right h3{
+	font-size: 14px;
+	color:#4e4e4e;
+}
+.afs-right .ui-fl{
+	margin-top: 40px;
+}
+.foot-btn .ui-btn{
+	margin-top: 40px;
+	margin-left: 265px;
+}
+.foot-btn .ui-fl{
+	margin-left: 380px;
+}
+/*閾惰浼樻儬*/
+.bc .cou-add{
+	float: left;
+}
+.refer{
+	margin-top: 30px;
+}
+.refer h1{
+	font-size: 14px;
+	color:#4e4e4e;
+	line-height: 54px;
+}
+.bc .ui-search{
+	margin-top: 46px;
+}
+/*浼樻儬绠＄悊 鏂板2*/
+.newly .discount-operate{
+	margin-left: 210px;
+}
+.newly .rig{
+	padding-left:50px;
+}
+.newly .td-nameL{
+	width:280px;
+}
+.discount-con .td-nameL{
+	width:150px;
+}
+.discount-con textarea{
+	width:710px;
+}
+.discount-con .s-txt{
+	width:710px;
+}
+.newly .text-top{
+	vertical-align: top;
+}
+.newly .ui-delete{
+	margin-left:140px;
+}
+.newly .i-txt{
+	width:110px;
+}
+.newly .inscrease{
+	padding-left: 85px;
+}
+
+.aprove .ui-ipt .i-txt{
+	width:145px;
+}
+
+.aprove .td-aname{
+	text-align: right;
+}
+
+.aprove_modify{
+	color:grey;
+}
+
+.ui-ipt img{
+	padding-top: 5px;
+}
+
+.ui-table .grey{
+	background:#fbfbfb;
+}
+
+.active .td-value .ui-ipt .i-txt{
+	width:100px;
+}
+
+.sogocou .discount-searchbtn{
+	margin-top: 46px;
+}
+.pro-t textarea{
+	width:300px;
+}
+.ta-title{
+	line-height: 50px;
+	text-align: left;
+}
+
+.ui-ipt .i-txt{
+	width:140px;
+}
+
+.govern-add .ui-ipt .i-txt{
+	width:153px;
+}
+
+.active .discount-list .td-nameL{
+	width:160px;
+} 
+.active .discount-con .td-nameL{
+	width:165px;
+}
+.active .rig{
+	width:368px;
+}
+
+.stream-text i{
+	position: absolute;
+	top: 2px;
+	right: 3px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 21px;
+	height: 21px;
+	margin: 3px 0 0 -10px;
+	background: url(../images/calder.png?__sprite) 0 center no-repeat;
+}
+.stream-text input {
+	background: url(../images/calder.png?__sprite) no-repeat scroll right center;
+	width: 145px !important;
+}
+.choice-btn .ui-btn{
+	position: relative;
+}
+.choice-btn input{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	width: 60px;
+	height: 32px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.ui-ipt .s-txt {
+	width:800px;
+	padding-left:6px;
+}
+.ui-ipt .i-txt-gray {
+	width:800px;
+}
+.flow-table {
+	max-height: 200px;
+	/*margin-top: 15px;*/
+	position: relative;
+	overflow: auto;
+}
+#customerList {
+	margin-top:0;
+}
+.name-close {
+	margin: 10px 0px 0px 5px;
+	font-size: 20px;
+}
+.name-close:hover {
+	color: #c8000a;
+}
+#cardType {
+	width: 120px;
+}
+#cardGrade {
+	width: 100px;
+}
+.eDiscount-add .td-name {
+	width: 200px;
+	text-align: right;
+}
+.eDiscount-add .td-nameL{
+	width:200px;
+	text-align: right;
+}
+.eDiscount-add .td-avalue {
+	width: 220px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.ui-ipt .i-txt-grey{
+	color:grey;
+	width:250px;
+}
+
+.ui-ipt .ss-txt{
+	color:#4e4e4e;
+	width:250px;
+}
+
+.discount-examine .suit-store {
+	margin-top: 0px;
+	width: 500px;
+	text-align: center;
+	font-size: 12px;
+	border-collapse: collapse;

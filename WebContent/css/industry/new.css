@@ -1,0 +1,78 @@
+/* 2015.4.13 13:35 */
+
+.administation-add .product-item {
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+}
+.administation-add .product-item .ui-ipt,
+.administation-add .product-item .k-select {
+	margin-right: 18px;
+}
+.administation-add .product-item .i-txt {
+	width: 96px;
+}
+.administation-add .product-item .remove-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 22px;
+	color: #7d7d7d;
+}
+.administation-add .product-item .remove-btn:hover {
+	color: #c8000a;
+}
+.administation-add .add-btn {
+	margin-left: 58px;
+	font-size: 24px;
+}
+.administation-add .form-btn-group {
+	margin-top: 60px;
+}
+.administation-add .form-btn-group .ui-btn {
+	margin-right: 60px;
+}
+
+
+/*administration-list*/
+.administration-list .ui-ipt,
+.administration-list .k-select {
+	margin-right: 18px;
+}
+.administration-list .ui-ipt .i-txt {
+	width: 96px;
+}
+/*===== list.css functionButton已注释 =====*/
+
+
+/*administration-update*/
+.administration-update .k-select {
+	margin-right: 18px;
+}
+
+/*business-add*/
+.business-add .k-select  {
+	margin-right: 18px;
+}
+.business-add .remove-btn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 22px;
+	color: #7d7d7d;
+}
+.business-add .business-name {
+	line-height: 32px;
+}
+.business-add .business-name .remove-btn:hover {
+	color: #c8000a;
+}

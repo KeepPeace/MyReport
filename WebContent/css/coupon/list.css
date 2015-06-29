@@ -1,0 +1,202 @@
+.industryLarge-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.administration-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.business-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.function-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.homeIndustry-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.industrySmall-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.sensitive-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+
+/*行政区划*/
+.functionButton {
+	margin-top: 15px;
+	background: #fff;
+	margin-right: 5px;
+}
+.btn-img {
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+.fb-btn {
+	margin-left: 20px;
+}
+.list-data{
+	margin-top: 67px;
+}
+.sensitive-list .i-txt {
+	width: 98px;
+}
+.place {
+	color: #4e4e4e;
+}
+
+/*商区类型*/
+.place-select {
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.small-searchbtn {
+	padding: 0 10px;
+}
+.administration-data {
+	margin-top: 22px;
+}
+
+/*相册分类*/
+.photo-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.photo-data {
+	margin-top: 20px;
+}
+.photo-data td {
+	height: 35px;
+}
+
+/*敏感字*/
+.sensitive-input {
+	width: 150px;
+	height: 30px;
+	margin-right: 20px;
+	margin-left: 10px;
+	padding-left: 15px;
+}
+.input-checkbox {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+}
+.multi-remove-btn {
+	margin-left: 20px;
+}
+.prompt-message {
+	position: fixed;
+	top: 400px;
+	left: 600px;
+}
+.pc-title {
+	text-align: left;
+	margin: 10px 0px 0px 10px;
+}
+.pc-table {
+	margin-left: 10px;
+}
+.pc-table td {
+	padding: 6px 10px 6px 0px; 
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	vertical-align: middle;
+}
+.pc-no {
+	width: 222px;
+}
+.prompt-btn {
+	margin-top: 20px;
+}
+.pb-btn {
+	margin-left: 50px;
+}
+.prompt-success {
+	position: fixed;
+	top: 400px;
+	left: 1000px;
+}
+.pc-success {
+	margin-top: 48px;
+}
+.pb-back {
+	margin-top: 45px;
+	margin-left: 120px;
+}
+.prompt-confirm {
+	position: fixed;
+	top: 400px;
+	left: 100px;
+}
+.confirm-txt {
+	margin-top: 37px;
+	text-align: left;
+	margin-left: 90px;
+}
+
+/*首页行业顺序*/
+.home-searchbtn {
+	width: 58px;
+	margin-left: 10px;
+}
+.home-data {
+	margin-top: 20px;
+}
+.home-data td .i-txt {
+	padding: 3px 0 3px 3px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+}
+.home-data td .ui-ipt {
+	height: 20px;
+	line-height: 20px;
+}
+.search-small {
+	margin-top: 12px;
+	text-align: right;
+}
+.search-select {
+	margin-left: 12px;
+}
+.search-txt {
+	margin-top: 5px;
+}
+.td-input {
+	width: 115px;
+	text-align: center;
+}
+.function-btn {
+	margin-top: 24px;
+}
+.home-btn1 {
+	width: 120px;
+	margin-left: 170px;
+}
+.home-btn2 {
+	width: 120px;
+	margin-left: 80px;
+}
+.home-btn3 {
+	width: 120px;
+	margin-left: 80px;
+}
+.confirm-txt1 {
+	margin-top: 37px;
+}

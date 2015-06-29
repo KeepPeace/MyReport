@@ -1,0 +1,43 @@
+.remark-detail .remark-left{
+	width:300px;
+	text-align: right;
+}
+.remark-detail .remark-right{
+	width:500px;
+	text-align: left;
+    word-wrap : break-word;
+    margin-top: 40px;
+}
+
+.remark-detail .detail-right{
+	width:500px;
+	text-align: left;
+    word-wrap : break-word;
+}
+
+.remark-detail .review-line{
+	font-size: 20px;
+	line-height: 45px;
+}
+
+.remark-detail .review-line ul{
+	position: relative;
+}
+
+.remark-detail .remark-repeat{
+	margin-left: 120px;
+}
+
+.remark-detail .review-content textarea{
+	margin-left: 120px;
+	width:760px;
+	height:150px;
+	font-size: 18px;
+}
+
+.remark-detail .remark-time{
+	font-size: 18px;
+	position: absolute;
+	left:300px;
+	top:2px;
+}

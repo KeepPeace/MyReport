@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--
+  ======================================================================
+     OFSTBANK builder 4 product                                                      
+     ======================================================================
+-->
+
+<project name="bankProduct" default="pack">
+ <property name="target" value="target"/>
+ <property name="Web" value="WebContent"/>
+ <property name="ProductFile" value="war"/>
+ <property name="appName" value="OFSTBANK"/>
+ <property name="OFSTMAP" value="../OFSTMAP/build/classes" />
+ <property name="common_lib_dir" value="../COMMONLIB" />
+ <property name="Server1" value=""/>
+ <target name="init">
+  <tstamp>
+   <format property="TODAY" pattern="yyyyMMdd" locale="cn"/>
+  </tstamp>
+  <!--<delete dir="${target}"/>-->
+  <mkdir dir="${target}"/>
+  <echo>${appName} ${TODAY}</echo>
+ </target>
+
+
+ <target name="packWebApp" depends="init">
+
+  <!-- 将OFSTMAP打包到临时目录 -->
+  <jar destfile="${target}/merg/WEB-INF/lib/ofstMap.jar">
+   <fileset dir="${OFSTMAP}">
+    <include name="**/*.*" />
+    <exclude name="mbg/*.*"/>
+   </fileset>
+  </jar>
+
+  <!-- 将公共jar copy到临时目录 -->
+  <copy todir="${target}/merg/WEB-INF/lib" overwrite="true">
+   <fileset dir="${common_lib_dir}/base">
+    <include name="*.jar" />
+    <!-- <exclude name="classes12.jar"/> -->
+   </fileset>
+   <fileset dir="${common_lib_dir}/public">
+    <include name="*.jar" />
+   </fileset>
+  </copy>
+  <copy todir="${target}/merg" overwrite="true">
+   <fileset dir="${Web}">
+   	<include name="business/**"/>
+   	<include name="common/**"/>
+    <include name="css/**"/>
+    <include name="images/**"/>
+    <include name="js/**"/>
+    <include name="WEB-INF/**"/>
+    <exclude name="WEB-INF/web*.xml"/>
+   </fileset>
+  </copy>
+  <!--<war warfile="${target}/${appName}-${TODAY}.war" webxml="${Web}/WEB-INF/web.xml"> -->
+     <war warfile="${target}/${appName}_${TODAY}.war" webxml="${Web}/WEB-INF/web.xml">
+   <fileset dir="${target}/merg">
+    <include name="**/**"/>
+   </fileset>
+  </war>
+
+  <delete dir="${target}/merg"/>
+ </target>
+
+ <target name="clean">
+  <delete dir="${target}"/>
+  <mkdir dir="${target}"/>
+ </target>
+
+ <target name="pack" depends="packWebApp"/>
+
+ <target name="all" depends="clean, packWebApp"/>
+</project>

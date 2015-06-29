@@ -1,0 +1,150 @@
+.industryLarge-orderAdjust {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.industryLargeDiscount-orderAdjust {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.industrySmallDiscount-orderAdjust {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.homeIndustry-orderAdjust {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.industrySmall-orderAdjust {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+
+.functionButton {
+	margin-top: 15px;
+	background: #fff;
+}
+.list-data {
+	margin-top: 30px;
+}
+.list-data td .i-txt {
+	padding: 3px 0 3px 3px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+}
+.list-data td .ui-ipt {
+	height: 20px;
+	line-height: 20px;
+}
+.list-datasmall {
+	margin-top: 20px;
+}
+.list-datasmall td .i-txt {
+	padding: 3px 0 3px 3px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+}
+.list-datasmall td .ui-ipt {
+	height: 20px;
+	line-height: 20px;
+}
+.fb-btn {
+	margin-left: 159px;
+}
+.td-input {
+	width: 115px;
+	text-align: center;
+}
+.prompt-message {
+	position: fixed;
+	top: 400px;
+	left: 100px;
+}
+.pc-title {
+	text-align: left;
+	margin: 10px 0px 0px 10px;
+}
+.pc-table {
+	margin-left: 10px;
+}
+.pc-table td {
+	padding: 6px 10px 6px 0px; 
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.pc-no {
+	width: 222px;
+}
+.prompt-btn {
+	margin-top: 20px;
+}
+.pb-btn {
+	margin-left: 50px;
+}
+.pc-success {
+	margin-top: 48px;
+}
+.pb-back {
+	margin-top: 45px;
+	margin-left: 120px;
+}
+.small-searchbtn {
+	width: 58px;
+	margin-left: 10px;
+}
+
+.place {
+	color: #4e4e4e;
+}
+.place-select {
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+/*首页行业顺序*/
+.home-searchbtn {
+	width: 58px;
+	margin-left: 10px;
+}
+.home-data {
+	margin-top: 20px;
+}
+.search-small {
+	margin-top: 12px;
+}
+.search-select {
+	margin-left: 12px;
+}
+.function-btn {
+	margin-top: 24px;
+}
+.home-btn1 {
+	width: 120px;
+	margin-left: 170px;
+}
+.home-btn2 {
+	width: 120px;
+	margin-left: 80px;
+}
+.home-btn3 {
+	width: 120px;
+	margin-left: 80px;
+}
+.confirm-txt1 {
+	margin-top: 37px;
+}
+.td-down {
+	margin-left: 20px;
+	margin-right: 5px;
+}

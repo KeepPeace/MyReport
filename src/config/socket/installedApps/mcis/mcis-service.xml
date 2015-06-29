@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<glz-server>
+	<project name="mcis" description="">
+		<service ip="127.0.0.1" port="2222" bind="true" redirect="true" pattern="json">
+			<processor processThread="20" closeThread="5"/>
+		</service>
+	</project>
+</glz-server>
+

@@ -1,0 +1,70 @@
+.param-maintenance {
+	padding-bottom: 50px;
+}
+.maintenance-con {
+	padding-left: 10px;
+}
+.ui-row-dt {
+	/*padding-top: 15px;*/
+	width: 100px;
+	text-align: right;
+}
+.ui-row-dd .ui-label {
+	width: 100px;
+	text-align: right;
+}
+.maintenance-con .ui-row-dd select {
+	width: 136px;
+}
+.maintenance-con .ui-row-dd .k-select {
+	margin-right: 100px;
+}
+.maintenance-con .ui-row-dd {
+	padding-bottom: 15px;
+	width: 900px;
+}
+.ui-btn-group {
+	text-align: center;
+}
+.ui-btn-group .ui-btn {
+	margin: 0 100px;
+}
+.btn-submit {
+	margin-left: 1px;
+}
+.param-commen {
+	font-size: 14px;
+}
+.commen-title {
+	margin-top: 25px;
+	margin-left: 12px;
+	color: #181818;
+}
+.commen-content {
+	margin-top: 25px;
+	color: #7d7d7d;
+}
+.commen-content ul {
+	margin-bottom: 10px;
+}
+.commen-content li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	line-height: 32px;
+}
+.content-title {
+	text-align: right;
+	width: 220px;
+}
+.title-wrong {
+	margin-left: 5px;
+	margin-top: 50px;
+	line-height: 32px;
+}
+.param-group .ui-btn {
+	margin: 0 10px !important;
+}
+.param-commen .back-btn {
+	margin-left: 100px;
+}

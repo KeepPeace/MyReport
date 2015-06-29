@@ -1,0 +1,235 @@
+.deleteReview-detail {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.review-img {
+	margin-left: 185px;
+	margin-top: 20px;
+}
+.function-deleteReview {
+	margin-top: 65px;
+	margin-left: 120px;
+}
+.btn-close {
+	margin-left: 257px;
+}
+
+/*优惠详情*/
+.review-detail {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+
+/*评价管理*/
+.review-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.review-data {
+	margin-top: 20px;
+}
+.place-msg {
+	margin-top: 10px;
+}
+.place-msg table {
+	float: right;
+	color: #4e4e4e;
+}
+.place-msg table td {
+	height: 32px;
+	line-height: 32px;
+	padding: 5px;
+}
+
+.td-1 {
+	text-align: right;
+	width: 60px;
+}
+.td-2 {
+	text-align: left;
+	width: 100px;
+}
+.td-3 {
+	text-align: right;
+	width: 100px;
+}
+.td-4 {
+	text-align: left;
+	width: 160px;
+}
+.td-5 {
+	text-align: right;
+	width: 100px;
+}
+.td-6 {
+	text-align: left;
+}
+.discount-searchbtn {
+	width: 58px;
+	margin-top: 47px; 
+}
+
+/*收藏管理*/
+.collect-list {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.collect-list .i-txt{
+	width:145px;
+}
+.collect-list .ui-ipt img{
+	padding-top: 5px;
+}
+
+/*优惠点评*/
+.discount-review {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.bank-review {
+	margin-top: 20px;
+	margin-left: 12px;
+}
+.review-title {
+	color:#4e4e4e;
+}
+.review-txt {
+	color: #4e4e4e;
+	margin-top: 15px;
+}
+.review-msg {
+	margin-top: 15px;
+	color: #a6a6a6;
+}
+.review-msg table td {
+	height: 32px;
+	line-height: 32px;
+}
+.td-name {
+	width: 92px;
+	text-align: right;
+	padding: 5px 0px;
+}
+.td-value {
+	width: 180px;
+	text-align: left;
+	padding: 5px;
+}
+.ui-fl td img {
+	margin-top: 9px;
+}
+.review-submit {
+	margin-top: 89px;
+}
+.user-review {
+	margin-top: 40px;
+	margin-left: 12px;
+}
+.review-detail {
+	margin-top: 20px;
+	color: #a6a6a6;
+}
+.review-left {
+	margin-left: 80px;
+}
+.review-data table {
+	color: #a6a6a6;
+}
+.stream-text input {
+	background: url(../images/calder.png?__sprite) no-repeat scroll right center;
+}
+
+.collect-list .i-txt{
+	widht:50px;
+}
+
+.collect-list .discount-searchbtn{
+	margin-top:64px;
+}
+
+/*点评详情 */
+.deleteReview-detail .review {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+.deleteReview-detail .head {
+	background: #c8000b;
+	font-size: 25px;
+	text-align: center;
+	line-height: 48px;
+	color: #fff;
+}
+.deleteReview-detail .head-title {
+	margin-top: 5px;
+	padding-bottom: 20px;
+	font-size: 33px;
+	line-height: 36px;
+}
+.deleteReview-detail .title-back {
+	margin-left: 15px;
+}
+.deleteReview-detail .review-detail {
+	color: #656565;
+}
+.deleteReview-detail .review-line {
+	height: 80px;
+	font-size: 28px;
+	line-height: 60px;
+}
+.deleteReview-detail .line-bottom {
+	border-bottom: 2px solid #efefef;
+}
+.deleteReview-detail .li1{
+	margin-left: 20px;
+}
+.deleteReview-detail .li2{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.deleteReview-detail .li3{
+	margin-left: 40px;
+}
+.deleteReview-detail .review-content {
+	margin: 10px 0 20px 10px;
+	font-size: 28px;
+}
+.deleteReview-detail .review-detail .review-img {
+	padding: 10px 0 20px 10px;
+	margin-left: 10px;
+}
+.ui-col-10 th {
+	width: 10%;
+}
+
+.delete-apply .chk-ico{
+	position: absolute;
+	left:0px;
+	top:3px;
+}
+
+.delete-apply .go-right{
+	padding-right:10px;
+}
+
+.delete-apply .td-1{
+	width:70px;
+}
+
+.delete-apply .discount-searchbtn{
+	margin-top:88px;
+}
+
+.delete-apply .function-closeImg .ui-btn{
+	margin-right:150px;
+}
+
+.delete-apply .function-closeImg{
+	margin-top:50px;
+	margin-left: 196px;
+}

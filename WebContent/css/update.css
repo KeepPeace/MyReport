@@ -1,0 +1,205 @@
+.industryLarge-update {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.administration-update {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.business-update {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.industrySmall-update {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.photo-update {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+
+.product-item {
+	margin-top: 30px;
+	margin-left: 11px;
+	color: #717171;
+}
+.product-title {
+	margin-left: 100px;
+}
+.name-txt {
+	height: 30px;
+	width: 130px;
+	padding-left: 9px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.product-no {
+	margin-left: 50px;
+}
+.product-pic {
+	margin-left: 96px;
+}
+.pic-img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.name-close {
+	margin: 10px 20px 0px 13px;
+	font-size: 25px;
+}
+.name-close:hover {
+	color: #c8000a;
+}
+.product-upload {
+}
+.product-tip {
+	width: 182px;
+	margin-left: 10px;
+}
+#country{
+	width:130px;
+}
+#province{
+	width:130px;
+}
+#city{
+	width:160px;
+}
+#district{
+	width:130px;
+}
+.function-btn {
+	margin-left: 115px;
+	margin-top: 50px;
+}
+.function-smallbtn {
+	margin-left: 12px;
+	margin-top: 50px;
+}
+.btn-back {
+	margin-left: 100px;
+}
+
+.prompt-message {
+	position: fixed;
+	top: 400px;
+	left: 100px;
+}
+.pc-title {
+	text-align: left;
+	margin: 10px 0px 0px 10px;
+}
+.pc-table {
+	margin-left: 10px;
+}
+.pc-table td {
+	padding: 6px 10px 6px 0px; 
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	vertical-align: middle;
+}
+.pc-no {
+	width: 222px;
+}
+.prompt-btn {
+	margin-top: 20px;
+}
+.pb-btn {
+	margin-left: 50px;
+}
+.prompt-success {
+	position: fixed;
+	top: 400px;
+	left: 600px;
+}
+.pc-success {
+	margin-top: 48px;
+}
+.pb-back {
+	margin-top: 45px;
+	margin-left: 120px;
+}
+
+/*商区*/
+.product- {
+	margin-top: 20px;
+	margin-left: 11px;
+	color: #717171;
+}
+.place-name {
+	margin-top: 40px;
+	margin-left: 12px;
+	color: #929292;
+}
+.function-placebtn {
+	margin-top: 100px;
+	margin-left: 12px;
+}
+
+/*行政区划*/
+.photo-update .i-txt,
+.business-update .i-txt {
+	width: 118px;
+}
+.administration-update .i-txt,
+.industryLarge-update .i-txt,
+.industrySmall-update .i-txt {
+	width: 98px;
+}
+
+.place {
+	padding-top:20px;
+	color: #4e4e4e;
+}
+.text-line{
+	padding-top:20px;
+}
+.function-administrationbtn {
+	margin-top: 40px;
+	margin-left: 12px;
+}
+
+/*相册分类*/
+.photo-add {
+	margin-top: 50px;
+	padding: 0;
+	background: #fff;
+}
+.photo-item {
+	margin-top: 30px;
+	margin-left: 37px;
+	color: #717171;
+}
+.choose-tip {
+	color: #c6010b;
+}
+.photo-input {
+	width: 150px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: #4e4e4e;
+}
+.product-review {
+	margin-top: 20px;
+	margin-left: -27px;
+}
+.function-photobtn {
+	margin-top: 30px;
+	margin-left: 7px;
+}
+.name-tip {
+	color: #c8000b;
+}
+.photo-class {
+	margin-top: 57px;
+}

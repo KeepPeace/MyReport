@@ -1,0 +1,143 @@
+.joiner .bank-title{
+	margin-left:0px;
+}
+.discount-data .per-num{
+	padding-bottom: 20px;
+	color:#7E7E7E;
+}
+.joiner .data-page{
+	line-height: 50px;
+}
+
+/*天天抽奖详情*/
+.lottery .td-nameL{
+	width:125px;
+}
+.lottery .ui-modify{
+	margin-right: 146px;
+}
+
+/*单选框*/
+.lottery .ui-chk {
+	position: relative;
+	display: inline;
+	padding-left: 16px;
+	height: 16px;
+	font-size: 14px;
+	cursor: pointer;
+	cursor: hand;
+	zoom: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.lottery .chk-ico {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	z-index: 1;
+	width: 16px;
+	height: 16px;
+	background: url(../images/cir.png?__sprite) 0 0 no-repeat;
+}
+.lottery .chked-ico {
+	background: url(../images/circle.png?__sprite) 0 0 no-repeat;
+}
+.lottery .ui-chk input {
+	display: none;
+}
+
+/*平台管理 商户管理 精选优惠*/
+.featured td .i-txt {
+	padding: 3px 0 3px 3px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+	width:75px;
+}
+.featured td .i-txts {
+	padding: 3px 0 3px 3px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	font-size: 12px;
+	width:50px;
+}
+.featured td .ui-ipt {
+	height: 20px;
+	line-height: 20px;
+}
+.featured .ui-line{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.featured-left .ui-ipt .i-txt{
+	width:250px;
+}
+.featured-left .ui-ipt{
+	float: left;
+}
+.featured .fitsogo-search{
+	float:left;
+	margin-left: 10px;
+	margin-top: 0px;
+}
+.featured-left{
+	float: left;
+	width:475px;
+}
+.featured .featured-table{
+	float:left;
+	width:400px;
+}
+
+.featured .ui-fl{
+	margin-top: 40px;
+}
+.featured .featured-add{
+	margin-top: 100px;
+	margin-left: 0px;
+}
+.featured .asf-delete{
+	margin-left:-104px;
+}
+.featured-right{
+	float: right;
+	width:400px;
+	margin-top: -65px;
+}
+.featured .asf-back{
+	margin-left:315px;
+	margin-right: 225px;
+}
+
+.text-top{
+	vertical-align: top;
+}
+
+.td-colspan5{
+	width:800px;
+	vertical-align: top;
+}
+.td-colspan5 .ui-top{
+	margin-top: 6px;
+	height:20px;
+	line-height: 20px;
+}
+.td-colspan5 .ui-fl{
+	height:32px;
+	line-height: 32px;
+}
+.td-namel5{
+	float: left;
+}
+
+.lottery #monthsel{
+	display: none;
+}
+.lottery #weeksel{
+	display: none;
+}

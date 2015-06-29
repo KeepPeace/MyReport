@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.*" />
+
+	<!-- 引入参数配置文件 -->
+	<bean id="propertyConfigurer"    
+    	class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">   
+ 	 	<property name="locations">   
+            <list>   
+                <value>classpath:db.properties</value>
+                <value>classpath:cistcs.properties</value>
+                <value>classpath:report.properties</value>
+            </list>   
+		</property>  
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+	</bean>
+	
+	<!-- 可写数据源 -->
+	<bean id="dataSourceWrite" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${database.driverClassName}" />
+		<property name="jdbcUrl" value="${database.url}" />
+		<property name="user" value="${database.username}" />
+		<property name="password" value="${database.password}" />
+		<property name="initialPoolSize" value="5" />
+		<property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="25" />
+		<property name="maxIdleTime" value="60" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="checkoutTimeout" value="3000" />
+	</bean>
+
+	<!-- 只读数据源 -->
+	<bean id="dataSourceRead" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${database.driverClassName}" />
+		<property name="jdbcUrl" value="${database.url}" />
+		<property name="user" value="${database.username}" />
+		<property name="password" value="${database.password}" />
+		<property name="initialPoolSize" value="5" />
+		<property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="25" />
+		<property name="maxIdleTime" value="60" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="checkoutTimeout" value="3000" />
+	</bean>
+
+	<!-- 可写的SessionFactory sqlWriteSessionFactory -->
+	<bean id="sqlWriteSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		scope="singleton">
+		<property name="dataSource" ref="dataSourceWrite" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+	</bean>
+
+	<!-- 只读的SessionFactory sqlReadOnlySessionFactory -->
+	<bean id="sqlReadOnlySessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+		scope="singleton">
+		<property name="dataSource" ref="dataSourceRead" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<property name="plugins">
+			<list>
+				<ref bean="pageInterceptor" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="writableSQLSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlWriteSessionFactory" />
+	</bean>
+
+	<bean id="readonlySQLSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlReadOnlySessionFactory" />
+	</bean>
+
+	<!-- 事务配置 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSourceWrite" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+<!-- 	<bean id="sysLogService" class="com.sby.apps.sys.service.impl.SysLogServiceImpl" -->
+<!-- 		scope="singleton"> -->
+<!-- 		<property name="writableSQLSession" ref="writableSQLSession" /> -->
+<!-- 		<property name="readonlySQLSession" ref="readonlySQLSession" /> -->
+<!-- 	</bean> -->
+<!-- 	<bean id="rmiSocketFactoryUtil" class="com.fuscent.loanorg.util.RMISocketFactoryUtil" -->
+<!-- 		init-method="initSocketPort"> -->
+<!-- 		<property name="port" value="${loan.rmi.port}" /> -->
+<!-- 	</bean> -->
+
+    <!-- 配置错误码工具类 -->
+	<bean id="resultCodeUtil" class="com.icbc.ofst.util.ResultCodeUtil">
+		<property name="cache" ref="resultCodeUtilCache" />
+	</bean>
+	<bean id="resultCodeUtilCache" class="com.icbc.ofst.util.StaticPropertiesDataCache"
+		scope="prototype">
+		<property name="location" value="classpath:resultcode.properties" />
+		<property name="fileEncoding" value="utf-8" />
+	</bean>
+
+</beans>

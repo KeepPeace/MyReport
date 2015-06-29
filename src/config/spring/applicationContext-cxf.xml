@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                       http://www.springframework.org/schema/beans/spring-beans.xsd
+                       http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+                       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<description> WebService服务端配置</description>
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<bean id="inMessageInterceptor" class="org.apache.cxf.interceptor.LoggingInInterceptor" />
+	<bean id="outMessageInterceptor" class="org.apache.cxf.interceptor.LoggingOutInterceptor" />
+
+	<jaxrs:server id="restServiceContainer" address="/rest">
+		<!-- 输入日志拦截器  -->
+		<jaxrs:inInterceptors>
+			<ref bean="inMessageInterceptor" />
+		</jaxrs:inInterceptors>
+		<!-- 输出日志拦截器  -->
+		<jaxrs:outInterceptors>
+			<ref bean="outMessageInterceptor" />
+		</jaxrs:outInterceptors>
+		<jaxrs:serviceBeans>
+			<ref bean="DefaultGateway" />
+		</jaxrs:serviceBeans>
+		<jaxrs:extensionMappings>
+			<entry key="json" value="application/json" />
+			<entry key="xml" value="application/xml" />
+		</jaxrs:extensionMappings>
+		<jaxrs:providers>
+			<bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" />
+		</jaxrs:providers>
+		<jaxrs:languageMappings>
+			<entry key="en" value="en-gb" />
+		</jaxrs:languageMappings>
+	</jaxrs:server>
+
+	<bean id="webClient" class="org.apache.cxf.jaxrs.client.WebClient"
+		factory-method="create">
+		<constructor-arg type="java.lang.String"
+			value="http://127.0.0.1:8080/glz/ws/rest/" index="0" />
+		<constructor-arg index="1">
+			<list>
+				<bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" />
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>

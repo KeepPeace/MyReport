@@ -1,0 +1,31 @@
+.param-maintenance {
+	padding-bottom: 50px;
+}
+.maintenance-con {
+	padding-left: 10px;
+}
+.ui-row-dt {
+	/*padding-top: 15px;*/
+	width: 100px;
+	text-align: right;
+}
+.ui-row-dd .ui-label {
+	width: 100px;
+	text-align: right;
+}
+.maintenance-con .ui-row-dd select {
+	width: 136px;
+}
+.maintenance-con .ui-row-dd .k-select {
+	margin-right: 100px;
+}
+.maintenance-con .ui-row-dd {
+	padding-bottom: 15px;
+	width: 900px;
+}
+.ui-btn-group {
+	text-align: center;
+}
+.ui-btn-group .ui-btn {
+	margin: 0 100px;
+}
