@@ -1,4 +1,4 @@
-package com.icbc.ofst.report.apps.service;
+package com.icbc.ofst.bank.apps.report.action;
 
 public class ReportInfo {
 

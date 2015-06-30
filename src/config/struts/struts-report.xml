@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default,jasperreports-default" namespace="/report">
+	
+		<result-types>  
+        	<result-type name="jasper" class="org.apache.struts2.views.jasperreports.JasperReportsResult"></result-type>   
+    	</result-types>
+    	  
+		<action name="genReport" class="com.icbc.ofst.bank.apps.report.action.ReportGenrateAction" method="genReport" >
+			<!-- 银行优惠信息 -->
+			<result name="gen_bank_discount" type="jasper">
+				<param name="location">/WEB-INF/report/bank_discount.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			<!-- 商户优惠信息 -->
+			<result name="gen_store_discount" type="jasper">
+				<param name="location">/WEB-INF/report/store_discount.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			<!-- 商户信息汇总 -->
+			<result name="gen_store_info" type="jasper">
+				<param name="location">/WEB-INF/report/store_info.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			<!-- 商户情况统计 -->
+			<result name="gen_store_situation" type="jasper">
+				<param name="location">/WEB-INF/report/store_situation.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			<!--客户信息汇总 -->
+			<result name="gen_cust_info" type="jasper">
+				<param name="location">/WEB-INF/report/cust_info.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			<!-- 平台使用情况 -->
+			<result name="gen_platform_usage" type="jasper">
+				<param name="location">/WEB-INF/report/platform_usage.jasper</param>
+				<param name="connection">connection</param>
+				<param name="format">XLS</param>
+				<param name="reportParameters">params</param> 
+			</result>
+			
+			
+		</action>
+	</package>
+</struts>
